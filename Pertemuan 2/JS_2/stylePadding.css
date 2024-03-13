@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    color: lightslategray;
+}
+
+h2 {
+    text-align: center;
+}
+
+.box {
+    background: lightpink;
+    height: 200px;
+    width : 300px;
+    padding : 20px;
+
+}
+
+.box-dua {
+    background: lightsalmon;
+    height : 100px;
+    width : 600px;
+    padding-left: 70px;
+}

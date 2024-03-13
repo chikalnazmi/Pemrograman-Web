@@ -1,0 +1,18 @@
+h1{
+    color: green;
+}
+
+.box {
+    background: lightskyblue;
+    height: 200px;
+    width : 300px;
+    margin: 300px;
+
+}
+
+.box-dua {
+    background: pink;
+    height : 100px;
+    width : 200px;
+    margin-left: 500px;
+}
