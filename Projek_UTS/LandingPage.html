@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Reservation</title>
+    <link rel="stylesheet" href="LandingStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".cafe-option button").click(function(){
+                $(this).animate({opacity: '0.5'}, "fast").delay(100).animate({opacity: '1'}, "fast");
+            });
+        });
+        
+        $(document).ready(function(){
+        $(".cafe-option").hover(function(){
+        $(this).find("img").stop().slideDown();
+         }, function(){
+        $(this).find("img").stop().slideUp();
+         });
+    });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Laduree Cafe</h1>
+    </header>
+    <main>
+        <section class="about-us">
+            <p>Welcome to our cozy cafe! We offer delicious coffee, pastries, and a warm atmosphere. Whether you're looking for a quiet spot to work or a place to catch up with friends, we have the perfect space for you. Reserve a table today and experience the charm of our cafe.</p>
+        </section>
+        <section class="fav-cafe">
+            <h2>Choose your favorite cafe</h2>
+        </section>
+        <form action="ReservationForm.html" method="post">
+        <section class="cafe-option">
+            <h2>Laduree Franche</h2>
+            <img src="cafe1.jpeg" alt="Cafe Option 1 Image" class="image">
+            <p>Located in the heart of downtown, Laduree Franche offers a cozy atmosphere with a wide selection of coffees and pastries.</p>
+            <button>Choose</button>
+        </section>
+        <section class="cafe-option">
+            <h2>Laduree Italy</h2>
+            <img src="cafe2.jpeg" alt="Cafe Option 2 Image" class="image">
+            <p>Enjoy the scenic views at Laduree Italy, nestled in the countryside. We serve organic coffees and homemade treats.</p>
+            <button>Choose</button>
+        </section>
+    </form>
+    </main>
+    <footer>
+        <p>Created By: Chikal Nazmi Mahira - 2241760122</p>
+    </footer>
+</body>
+</html>
